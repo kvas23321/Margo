@@ -599,7 +599,7 @@ const SNAKE_SPEED_MS = 120;
 // сапёр: лёгкий
 const MINES_ROWS = 8;
 const MINES_COLS = 8;
-const MINES_BOMBS = 1;
+const MINES_BOMBS = 8;
 
 // виселица: сложнее (жизни)
 const HANG_LIVES = 6;
@@ -1349,7 +1349,7 @@ function showLinkPartScreen(){
   const copyBtn = document.getElementById("copyBtn");
   const copyMsg = document.getElementById("copyMsg");
 
-  partBox.textContent = (typeof LINK_PART === "string" ? LINK_PART : "—");
+  partBox.textContent = (typeof LINK_PART === "string" ? LINK_PART : "thub.io");
 
   copyBtn.addEventListener("click", async ()=>{
     const text = partBox.textContent;
